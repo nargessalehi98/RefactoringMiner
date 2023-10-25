@@ -1,7 +1,7 @@
 package gr.uom.java.xmi.diff;
 
 public class TestOperationDiffMother {
-    static String createExampleClassCode() {
+    static String createExampleClassCode() {  // TODO: define as a non-static
         return "package ca.concordia.victor.exception;\n" +
                 "\n" +
                 "class ExampleClass {\n" +
