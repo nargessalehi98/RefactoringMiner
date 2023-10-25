@@ -13,7 +13,7 @@ public class TestOperationDiffMother {
                 "\n" +
                 "    void exampleMethod(int guessingField) {\n" +
                 "        if (guessingField != exampleField) {\n" +
-                "            throw new IllegalArgumentException(\"Wrong guess!\");\n" +
+                "            throw new IllegalArgumentException(\"Wrong guess!\");\n" + // TODO: better explanation
                 "        }\n" +
                 "    }\n" +
                 "}\n";
