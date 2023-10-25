@@ -48,7 +48,7 @@ public class TryWithFailToExpectedExceptionRuleDetection {
             if (checkFromTryWithFail() && checkToExpectedException()) {
                 return createRefactoring();
             }
-            return null;
+            return null;  // TODO: save it in a variable before returning
         }
         catch (NoSuchElementException exception) {
             return null;
