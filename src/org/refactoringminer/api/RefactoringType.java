@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum RefactoringType {
-
+	// TODO: improve readability and clean-code
 	EXTRACT_OPERATION("Extract Method", "Extract Method (.+) extracted from (.+) in class (.+)", 2),
 	RENAME_CLASS("Rename Class", "Rename Class (.+) renamed to (.+)"),
 	MOVE_ATTRIBUTE("Move Attribute", "Move Attribute (.+) from class (.+) to (.+) from class (.+)"),
