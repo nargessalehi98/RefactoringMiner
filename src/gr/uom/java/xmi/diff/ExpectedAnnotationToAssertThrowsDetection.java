@@ -31,7 +31,7 @@ public class ExpectedAnnotationToAssertThrowsDetection {
     }
 
     public ExpectedAnnotationToAssertThrowsRefactoring check() {
-        var expectedRemovalFromTestAnnotation = getRemovedExpectedAttributeFromTestAnnotation();
+        var expectedRemovalFromTestAnnotation = getRemovedExpectedAttributeFromTestAnnotation(); // TODO: check NullPointerException
         try {
             annotationChange = expectedRemovalFromTestAnnotation.orElseThrow();
             exception = annotationChange.getAnnotationBefore().getMemberValuePairs().get("expected");
