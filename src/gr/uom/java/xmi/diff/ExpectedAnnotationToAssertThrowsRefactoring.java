@@ -18,7 +18,7 @@ import java.util.Set;
  * JUnit4 usually relies on @Test(expected), a member value pair which receives an exception type literal
  * JUnit5 introduces the assertThrows method that expects both an exception type and a lambda function
  */
-public class ExpectedAnnotationToAssertThrowsRefactoring implements Refactoring {
+public class ExpectedAnnotationToAssertThrowsRefactoring implements Refactoring { // TODO: define a defaul constructor
     private final UMLOperation operationBefore;
     private final UMLOperation operationAfter;
     private final ModifyMethodAnnotationRefactoring expectedExceptionAnnotation;
