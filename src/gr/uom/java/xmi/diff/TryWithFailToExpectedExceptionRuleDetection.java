@@ -96,7 +96,7 @@ public class TryWithFailToExpectedExceptionRuleDetection {
 
     private static boolean isExpectedExceptionExpectInvocation(List<String> candidateExceptions, OperationInvocation invocation) {
         return invocation.getMethodName().equals("expect") && isAnyArgumentPassedTo(candidateExceptions, invocation);
-    }
+    }  // TODO: It is btter to use equalsIgnoreCase instead of equals
 
     private static boolean isAnyArgumentPassedTo(List<String> arguments, OperationInvocation invocation) {
         return arguments.contains(invocation.getArguments().get(0));
