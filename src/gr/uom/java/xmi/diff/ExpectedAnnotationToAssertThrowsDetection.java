@@ -51,8 +51,8 @@ public class ExpectedAnnotationToAssertThrowsDetection {
     }
 
     private boolean isEnclosedBy(LambdaExpressionObject lambda, OperationInvocation invocation) {
-        var invocationRange = invocation.codeRange();
-        var lambdaRange = lambda.codeRange();
+        var invocationRange = invocation.codeRange(); // TODO: check NullPointerException
+        var lambdaRange = lambda.codeRange(); // TODO: check NullPointerException
         return invocationRange.getStartLine() <= lambdaRange.getStartLine() &&
                 invocationRange.getEndLine() >= lambdaRange.getEndLine() &&
                 invocationRange.getStartColumn() <= lambdaRange.getStartColumn() &&
