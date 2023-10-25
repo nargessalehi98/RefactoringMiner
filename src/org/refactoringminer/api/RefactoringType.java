@@ -6,7 +6,7 @@ import org.refactoringminer.utils.RefactoringRelationship;
 import java.util.Collection;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+// TODO: add documentation
 public enum RefactoringType {
 	// TODO: improve readability and clean-code
 	EXTRACT_OPERATION("Extract Method", "Extract Method (.+) extracted from (.+) in class (.+)", 2),
@@ -149,7 +149,7 @@ public enum RefactoringType {
         }
     }
 
-    public static void parse(String refactoringDescription, Collection<RefactoringRelationship> result) {
+    public static void parse(String refactoringDescription, Collection<RefactoringRelationship> result) { 
         RefactoringType refType = extractFromDescription(refactoringDescription);
         Matcher m = refType.regex.matcher(refactoringDescription);
         if (m.matches()) {
