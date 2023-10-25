@@ -96,7 +96,7 @@ public enum RefactoringType {
 	MERGE_PACKAGE("Merge Package", "Merge Package \\[(.+)\\] to (.+)"),
     EXPECTED_WITH_ASSERT_THROWS("Expect Annotation With Assert Throws", "Expect Annotation With Assert Throws (.+) from method (.+) in class (.+)");
 
-	private final String displayName;
+	private final String displayName;   // TODO: move these variables up
 	private final Pattern regex;
 	private final int[] aggregateGroups;
 	public static final RefactoringType[] ALL = RefactoringType.values();
