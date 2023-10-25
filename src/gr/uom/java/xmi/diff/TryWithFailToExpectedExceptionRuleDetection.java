@@ -80,7 +80,7 @@ public class TryWithFailToExpectedExceptionRuleDetection {
         expectedExceptionFieldDeclaration = addedAttributes.stream()
                 .filter(field -> field.getType().getClassType().equals("ExpectedException"))
                 .findAny()
-                .orElseThrow();
+                .orElseThrow();   // TODO: use try-catch block
         expectInvocations = detectAddedExpectInvocations(addedStmts,capturedExceptions, expectedExceptionFieldDeclaration)
                 .collect(Collectors.toList());
         return expectInvocations.size() > 0;
