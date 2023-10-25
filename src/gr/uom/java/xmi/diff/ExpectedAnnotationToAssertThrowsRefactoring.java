@@ -41,7 +41,7 @@ public class ExpectedAnnotationToAssertThrowsRefactoring implements Refactoring 
     }
 
     @Override
-    public String toString() {
+    public String toString() {  // TODO: consider implementing a more descriptive toString() method
         return getName() + "\t" +
                 exception +
                 " from method " +
