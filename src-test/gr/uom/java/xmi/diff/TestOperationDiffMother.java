@@ -39,10 +39,10 @@ public class TestOperationDiffMother {
 
     static String createExampleTestMethod_TryCatchVersion() {
         return "    @Test\n" +
-                "    public void testExampleMethod_WrongGuess() {\n" +
+                "    public void testExampleMethod_WrongGuess() {\n" + // TODO: don't include error message in func name
                 "        try {\n" +
                 "            exampleObj.exampleMethod(0);\n" +
-                "            Assert.fail(\"IllegalArgumentException expected\");\n" +
+                "            Assert.fail(\"IllegalArgumentException expected\");\n" + // TODO: put it here 
                 "        } catch (IllegalArgumentException ignored) {}\n" +
                 "    }";
     }
