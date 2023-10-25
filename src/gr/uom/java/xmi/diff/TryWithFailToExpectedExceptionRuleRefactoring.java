@@ -37,12 +37,12 @@ public class TryWithFailToExpectedExceptionRuleRefactoring implements Refactorin
     }
 
     @Override
-    public List<CodeRange> leftSide() {
+    public List<CodeRange> leftSide() {   // TODO: leftSideOfCode
         return null;
     }
 
     @Override
-    public List<CodeRange> rightSide() {
+    public List<CodeRange> rightSide() { // TODO: rightSideOfCode
         return null;
     }
 
